@@ -1,5 +1,6 @@
 package devandroid.gabriel.primeiroappdio
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,9 +24,28 @@ class TrocarLingua : AppCompatActivity() {
 
         spinner_idiomas.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                val languageSelected = data[p2]
-                LanguageSelection(data,languageSelected)
-                recreate()
+                when (p2) {
+                    1 -> {
+                        LanguageSelection("pt")
+                        val intent = Intent(this@TrocarLingua, MainActivity::class.java)
+                        startActivity(intent)
+                    }
+                    2 -> {
+                        LanguageSelection("en")
+                        val intent = Intent(this@TrocarLingua, MainActivity::class.java)
+                        startActivity(intent)
+                    }
+                    3 -> {
+                        LanguageSelection("it")
+                        val intent = Intent(this@TrocarLingua, MainActivity::class.java)
+                        startActivity(intent)
+                    }
+                    4 -> {
+                        LanguageSelection("es")
+                        val intent = Intent(this@TrocarLingua, MainActivity::class.java)
+                        startActivity(intent)
+                    }
+                }
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -34,17 +54,12 @@ class TrocarLingua : AppCompatActivity() {
         }
     }
 
-    private fun LanguageSelection(data: Array<String>,language: String) {
-        if (data.contains(language)) {
-            val locale = Locale(language)
-            Locale.setDefault(locale)
-            val res = this.resources
-            val config = res.configuration
-            config.setLocale(locale)
-            resources.updateConfiguration(config, res.displayMetrics)
-        }
-        else {
-            println("erro")
-        }
+    private fun LanguageSelection(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val res = this.resources
+        val config = res.configuration
+        config.setLocale(locale)
+        resources.updateConfiguration(config, res.displayMetrics)
     }
 }
