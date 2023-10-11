@@ -8,11 +8,12 @@
     tools:context=".TrocarLingua">
 
     <TextView
+        android:id="@+id/language_selector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="30dp"
-        android:text="Selecione um idioma"
+        android:text="@string/language_selector"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="26dp" />

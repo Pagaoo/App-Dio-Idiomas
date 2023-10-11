@@ -45,6 +45,11 @@ class TrocarLingua : AppCompatActivity() {
                         val intent = Intent(this@TrocarLingua, MainActivity::class.java)
                         startActivity(intent)
                     }
+                    5 -> {
+                        LanguageSelection("zh")
+                        val intent = Intent(this@TrocarLingua, MainActivity::class.java)
+                        startActivity(intent)
+                    }
                 }
             }
 

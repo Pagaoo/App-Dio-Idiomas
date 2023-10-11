@@ -2,4 +2,6 @@
 <resources>
     <string name="bem_vindo">Hola, mi nombre es %s!</string>
     <string name="descricao">Formación en traducción a otros idiomas.</string>
+    <string name="configuration">Cambiar idioma</string>
+    <string name="language_selector">Selecciona un idioma</string>
 </resources>

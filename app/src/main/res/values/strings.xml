@@ -2,11 +2,14 @@
     <string name="app_name" translatable="false">PrimeiroAppDio</string>
     <string name="bem_vindo">Olá, meu nome é %s!</string>
     <string name="descricao">Treinando tradução para outras linguas.</string>
+    <string name="configuration">Trocar idioma</string>
+    <string name="language_selector">Selecione um idioma</string>
     <string-array name="language_list">
         <item>Padrão</item>
         <item>Portugês Br</item>
         <item>Inglês</item>
         <item>Italiano</item>
         <item>Espanhol</item>
+        <item>Chinês</item>
     </string-array>
 </resources>

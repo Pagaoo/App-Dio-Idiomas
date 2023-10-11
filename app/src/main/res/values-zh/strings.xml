@@ -2,4 +2,6 @@
 <resources>
     <string name="bem_vindo">你好，我的名字是 %s！</string>
     <string name="descricao">培训翻译成其他语言。</string>
+    <string name="configuration">改变语言</string>
+    <string name="language_selector">选择语言</string>
 </resources>
