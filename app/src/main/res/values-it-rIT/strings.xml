@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bem_vindo">Ciao, mi chiamo %s!</string>
+    <string name="descricao">Traduzione di corsi di formazione in altre lingue.</string>
+</resources>

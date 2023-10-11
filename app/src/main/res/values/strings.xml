@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">PrimeiroAppDio</string>
+    <string name="bem_vindo">Olá, meu nome é %s!</string>
+    <string name="descricao">Treinando tradução para outras linguas.</string>
+</resources>
